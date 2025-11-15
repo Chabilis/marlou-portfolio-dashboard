@@ -34,7 +34,7 @@ with st.expander("2. File Upload API - Accepts Excel/CSV"):
 # Project 3 – AI Demo
 with st.expander("3. LLM Summarizer API - Real AI (Llama 3.3)"):
     st.markdown("• [Live AI API](https://marlou-llm-summarizer.onrender.com)")
-    file = st.file_uploader("Upload Excel/CSV for instant AI summary", type=["xlsx", "csv", "txt"], key="ai")
+    file = st.file_uploader("Upload Excel/CSV for instant AI summary [if this live on Streamlit, it takes min to generate.]", type=["xlsx", "csv", "txt"], key="ai")
     if file:
         response = requests.post(
             "https://marlou-llm-summarizer.onrender.com/summarize",
